@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: lightgray;
+      max-width: 1200px;
+      margin: auto;
+      padding-top: 50px;
+    }
+    .column {
+      float: left;
+      width: 33.33%;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    img {
+      width: 200px;
+      height: 180px;
+    }
+    .card {
+      background-color: white;
+      width: 350px;
+      height: 520px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+    .cardContent {
+        padding-top: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+      }
+    hr {
+      opacity: 0.5;
+    }
+    .button {
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .addToCard {
+      background-color: gray;
+      color: white;
+      border-radius: 5px;
+    }
+    .checkOut {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="cardContent">
+            <img src="1.jpg" alt="logo" class="center" />
+            <h1>Tank</h1>
+            <hr />
+            <p>Price: $58K</p>
+            <div class="buttonContent">
+              <button class="button addToCard">add to cart</button>
+              <button class="button checkOut">check out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="cardContent">
+            <img src="2.png" alt="logo" class="center" />
+            <h1>Plane</h1>
+            <hr />
+            <p>Price: $7M</p>
+            <div>
+              <button class="button addToCard">add to cart</button>
+              <button class="button checkOut">check out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="cardContent">
+            <img src="3.jpg" alt="logo" class="center" />
+            <h1>Submarine</h1>
+            <hr />
+            <p>Price: $6.5M</p>
+            <div>
+              <button class="button addToCard">add to cart</button>
+              <button class="button checkOut">check out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
